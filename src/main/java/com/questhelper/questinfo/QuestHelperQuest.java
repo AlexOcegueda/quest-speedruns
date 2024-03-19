@@ -268,6 +268,7 @@ import com.questhelper.helpers.quests.whatliesbelow.WhatLiesBelow;
 import com.questhelper.helpers.quests.witchshouse.WitchsHouse;
 import com.questhelper.helpers.quests.witchspotion.WitchsPotion;
 import com.questhelper.helpers.quests.xmarksthespot.XMarksTheSpot;
+import com.questhelper.helpers.speedrun.xmarksthespot.XMarksTheSpotSpeedrun;
 import com.questhelper.helpers.quests.zogreflesheaters.ZogreFleshEaters;
 import com.questhelper.helpers.skills.agility.Agility;
 import com.questhelper.helpers.skills.mining.Mining;
@@ -487,7 +488,7 @@ public enum QuestHelperQuest
 	KNIGHT_WAVES_TRAINING_GROUNDS(new KnightWaves(), "Knight Waves Training Grounds", QuestVarbits.KNIGHT_WAVES_TRAINING_GROUNDS, 8,
 		QuestDetails.Type.MINIQUEST, QuestDetails.Difficulty.MINIQUEST),
 	BALLOON_TRANSPORT_CRAFTING_GUILD(new CraftingGuildBalloonFlight(), "Balloon Transport - Crafting Guild", QuestVarbits.BALLOON_TRANSPORT_CRAFTING_GUILD, 1, QuestDetails.Type.MINIQUEST,
-		 QuestDetails.Difficulty.MINIQUEST),
+		QuestDetails.Difficulty.MINIQUEST),
 	BALLOON_TRANSPORT_VARROCK(new VarrockBalloonFlight(), "Balloon Transport - Varrock", QuestVarbits.BALLOON_TRANSPORT_VARROCK, 1, QuestDetails.Type.MINIQUEST,
 		QuestDetails.Difficulty.MINIQUEST),
 	BALLOON_TRANSPORT_CASTLE_WARS(new CastleWarsBalloonFlight(), "Balloon Transport - Castle Wars", QuestVarbits.BALLOON_TRANSPORT_CASTLE_WARS, 1, QuestDetails.Type.MINIQUEST,
@@ -640,7 +641,11 @@ public enum QuestHelperQuest
 	MINING(new Mining(), "Mining", Skill.MINING, 99, QuestDetails.Type.SKILL_F2P, QuestDetails.Difficulty.SKILL),
 
 	// Player Quests
-	COOKS_HELPER(new CooksHelper(), "Cook's Helper", PlayerQuests.COOKS_HELPER, 4);
+	COOKS_HELPER(new CooksHelper(), "Cook's Helper", PlayerQuests.COOKS_HELPER, 4),
+	
+	// Speedrun Quests
+	X_MARKS_THE_SPOT_SPEEDRUN(new XMarksTheSpotSpeedrun(), "X Marks The Spot", QuestVarbits.QUEST_X_MARKS_THE_SPOT_SPEEDRUN, -1, QuestDetails.Type.SPEEDRUN,
+		QuestDetails.Difficulty.SPEEDRUN);
 
 	@Getter
 	private final int id;
