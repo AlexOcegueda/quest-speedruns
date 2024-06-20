@@ -277,6 +277,7 @@ import com.questhelper.helpers.skills.agility.Agility;
 import com.questhelper.helpers.skills.mining.Mining;
 import com.questhelper.helpers.skills.woodcutting.Woodcutting;
 import com.questhelper.helpers.skills.woodcutting.WoodcuttingMember;
+import com.questhelper.helpers.speedruns.xmarksthespot.XMarksTheSpotSpeedrun;
 import com.questhelper.playerquests.cookshelper.CooksHelper;
 import com.questhelper.questhelpers.QuestDetails;
 import com.questhelper.questhelpers.QuestHelper;
@@ -647,7 +648,10 @@ public enum QuestHelperQuest
 	MINING(new Mining(), "Mining", Skill.MINING, 99, QuestDetails.Type.SKILL_F2P, QuestDetails.Difficulty.SKILL),
 
 	// Player Quests
-	COOKS_HELPER(new CooksHelper(), "Cook's Helper", PlayerQuests.COOKS_HELPER, 4);
+	COOKS_HELPER(new CooksHelper(), "Cook's Helper", PlayerQuests.COOKS_HELPER, 4),
+
+	// Speedrun
+	X_MARKS_THE_SPOT_SPEEDRUN(new XMarksTheSpotSpeedrun(), Quest.X_MARKS_THE_SPOT, QuestVarbits.SPEEDRUN_QUEST_X_MARKS_THE_SPOT_SPEEDRUN, QuestDetails.Type.SPEEDRUN, QuestDetails.Difficulty.SPEEDRUN);
 
 	@Getter
 	private final int id;
